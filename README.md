@@ -39,7 +39,7 @@ Have a custom video player? We now have a `customSelector` option where you can 
 
 ```javascript
   Y.one('body').plug(Y.Plugin.FitVids {
-    customSelector: 'iframe[src^='http://mycoolvideosite.com'], iframe[src^='http://myviiids.com']'
+    customSelector: 'iframe[src^="http://mycoolvideosite.com"], iframe[src^="http://myviiids.com"]'
     // Selectors are comma separated, just like CSS
   });
 ```
