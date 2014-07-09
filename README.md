@@ -1,4 +1,4 @@
-# Introducing FitVids.js
+# Introducing YUI3-Fluid-Vids.js
 A lightweight, easy-to-use YUI3 plugin for fluid width video embeds.
 
 This plugin is based on: https://github.com/davatron5000/FitVids.js
