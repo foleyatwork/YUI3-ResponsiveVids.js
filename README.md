@@ -56,7 +56,6 @@ If you'd like to add a custom block to ignore FitVids, use the `ignore` option.
     ignore: '.mycooldiv, #myviiid'
     // Selectors are comma separated, just like CSS
   });
-  // Selectors are comma separated, just like CSS
 ```
 
 ## Known issues
