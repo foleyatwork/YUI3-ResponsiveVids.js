@@ -47,7 +47,7 @@ Have a custom video player? We now have a `customSelector` option where you can 
 _Note:_ This will be the quickest way to add your own custom vendor as well as test your player's compatibility with ResponsiveVids.
 
 ## Ignore With Class
-Have a video you want ResponsiveVids to ignore? You can slap a class of `ResponsiveVidsignore` on your object or container and your video will be displayed as it is defined.
+Have a video you want ResponsiveVids to ignore? You can slap a class of `responsivevidsignore` on your object or container and your video will be displayed as it is defined.
 
 If you'd like to add a custom block to ignore ResponsiveVids, use the `ignore` option.
 
