@@ -1,5 +1,5 @@
-YUI.add('fit-vids', function (Y) {
-  Y.Plugin.FitVids = Y.Base.create('fitvids', Y.Plugin.Base, [], {
+YUI.add('responsive-vids', function (Y) {
+  Y.Plugin.ResponsiveVids = Y.Base.create('responsivevids', Y.Plugin.Base, [], {
 
     initializer: function () {
       var customSelector = this.get('customSelector');
@@ -13,7 +13,7 @@ YUI.add('fit-vids', function (Y) {
         "object",
         "embed"
       ];
-      this.ignoreList = '.fitvidsignore';
+      this.ignoreList = '.responsivevidsignore';
 
       if (customSelector) {
         this.selectors.push(customSelector);
@@ -90,7 +90,7 @@ YUI.add('fit-vids', function (Y) {
     }
     
   }, {
-    NS: 'fitvids',
+    NS: 'responsivevids',
     ATTRS: {
       customSelector: {
         value: null // Selector string.

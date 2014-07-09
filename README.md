@@ -1,20 +1,20 @@
-# Introducing YUI3-FitVids.js
+# Introducing YUI3-ReponsiveVids.js
 A lightweight, easy-to-use YUI3 plugin for fluid width video embeds.
 
 This plugin is based on: https://github.com/davatron5000/FitVids.js
 
-FitVids automates [the Intrinsic Ratio Method by Thierry Koblentz](http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/) to achieve fluid width videos in your responsive web design.
+ResponsiveVids automates [the Intrinsic Ratio Method by Thierry Koblentz](http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/) to achieve fluid width videos in your responsive web design.
 
 ## How Do I Use It?
-Include YUI3 and FitVids.js in your layout and add the script to your videos container using the ".plug()" method.
+Include YUI3 and ResponsiveVids.js in your layout and add the script to your videos container using the ".plug()" method.
 
 ```html
 <script src="path/to/yui-min.js"></script>
-<script src="path/to/yui3.fitvids.js"></script>
+<script src="path/to/yui3.YUI3-responsivevids.js"></script>
 <script>
   YUI().use('fit-vids', function (Y) {
     Y.on('domready', function () {
-      Y.one('body').plug(Y.Plugin.FitVids);
+      Y.one('body').plug(Y.Plugin.ResponsiveVids);
     });
   });
 </script>
@@ -38,21 +38,21 @@ This will wrap each video in a `div.fluid-width-video-wrapper` and apply the nec
 Have a custom video player? We now have a `customSelector` option where you can add your own specific video vendor selector (_mileage may vary depending on vendor and fluidity of player_):
 
 ```javascript
-  Y.one('body').plug(Y.Plugin.FitVids {
+  Y.one('body').plug(Y.Plugin.ResponsiveVids {
     customSelector: 'iframe[src^="http://mycoolvideosite.com"], iframe[src^="http://myviiids.com"]'
     // Selectors are comma separated, just like CSS
   });
 ```
 
-_Note:_ This will be the quickest way to add your own custom vendor as well as test your player's compatibility with FitVids.
+_Note:_ This will be the quickest way to add your own custom vendor as well as test your player's compatibility with ResponsiveVids.
 
 ## Ignore With Class
-Have a video you want FitVids to ignore? You can slap a class of `fitvidsignore` on your object or container and your video will be displayed as it is defined.
+Have a video you want ResponsiveVids to ignore? You can slap a class of `ResponsiveVidsignore` on your object or container and your video will be displayed as it is defined.
 
-If you'd like to add a custom block to ignore FitVids, use the `ignore` option.
+If you'd like to add a custom block to ignore ResponsiveVids, use the `ignore` option.
 
 ```javascript
-  Y.one('body').plug(Y.Plugin.FitVids {
+  Y.one('body').plug(Y.Plugin.ResponsiveVids {
     ignore: '.mycooldiv, #myviiid'
     // Selectors are comma separated, just like CSS
   });
@@ -60,4 +60,4 @@ If you'd like to add a custom block to ignore FitVids, use the `ignore` option.
 
 ## Known issues
 
-* Vimeo Autoplay API is not compatible with FitVids in IE11. You must manually wrap videos you want to autoplay.
+* Vimeo Autoplay API is not compatible with ResponsiveVids in IE11. You must manually wrap videos you want to autoplay.
