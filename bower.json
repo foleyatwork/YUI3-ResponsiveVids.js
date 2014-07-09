@@ -1,7 +1,7 @@
 {
-  "name": "fitvids",
+  "name": "responsivevids",
   "version": "1.0",
-  "main": "./yui3.fitvids.js",
+  "main": "./yui3.responsivevids.js",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -13,12 +13,12 @@
   "dependencies": {
     "yui": ">= 3"
   },
-  "homepage": "https://github.com/foleyatwork/FitVids.js",
+  "homepage": "https://github.com/foleyatwork/YUI3-ResponsiveVids.js",
   "authors": [
     "Dave Rupert <rupato@gmail.com>",
     "Kevin Foley <kevin.james.foley@gmail.com>"
   ],
-  "description": "FitVids makes video embeds responsive",
+  "description": "ResponsiveVids makes video embeds responsive",
   "keywords": [
     "FitVids",
     "Responsive",
